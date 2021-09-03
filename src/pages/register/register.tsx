@@ -5,8 +5,13 @@ import HeroBg from "../../res/circuit-board.svg";
 
 const Register: React.FC = (): React.ReactElement => {
   return (
-    <div className="register-container">
-      <h1>Coming Soon :)</h1>
+    <div
+      className="home register-container"
+      style={{ backgroundImage: `linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(0, 0, 0, 0)), url(${HeroBg})` }}
+    >
+      <a href="https://forms.gle/By47ujUDVSDN9cjeA" target="_blank" rel="noreferrer">
+        Blue Team Signups
+      </a>
     </div>
   );
 };
