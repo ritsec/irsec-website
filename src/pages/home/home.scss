@@ -34,3 +34,16 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 786px) {
+  .hero {
+    h1 {
+      font-size: 5rem !important;
+      width: 100% !important;
+    }
+
+    h3 {
+      font-size: 1.5rem !important;
+    }
+  }
+}

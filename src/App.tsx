@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -9,13 +9,25 @@ import Resources from "./pages/resources/resources";
 import Register from "./pages/register/register";
 
 import "./App.scss";
+import Sidebar from "./components/sidebar/sidebar";
 
 const App: React.FC = (): React.ReactElement => {
   const location = useLocation();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [cachedHref, setCachedHref] = useState("");
+
+  const openSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  if (cachedHref !== window.location.href) {
+    setIsSidebarOpen(false);
+    setCachedHref(window.location.href);
+  }
 
   return (
     <div className="app-container">
-      <Nav />
+      <Nav openSidebar={openSidebar} isSidebarOpen={isSidebarOpen} />
       <TransitionGroup>
         <CSSTransition timeout={300} classNames="fade" key={location.key}>
           <Switch>
@@ -26,6 +38,7 @@ const App: React.FC = (): React.ReactElement => {
           </Switch>
         </CSSTransition>
       </TransitionGroup>
+      <Sidebar isOpen={isSidebarOpen} />
     </div>
   );
 };

@@ -111,3 +111,29 @@ h6 {
     }
   }
 }
+
+@media only screen and (max-width: 786px) {
+  .hero {
+    text-align: center;
+  }
+
+  .mini-hero {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+
+  .content {
+    padding: 1rem !important;
+  }
+
+  .card-fluid-50 {
+    width: 100% !important;
+  }
+
+  .card {
+    .card-header {
+      line-height: 2.5rem;
+    }
+  }
+}
