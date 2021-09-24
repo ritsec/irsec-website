@@ -17,6 +17,9 @@ const Resources: React.FC = (): React.ReactElement => {
         <a href={`${process.env.PUBLIC_URL}/res/IRSeC_2021_Packet_v6.pdf`} target="_blank" rel="noreferrer">
           IRSeC 2021 Blue Team Packet
         </a>
+        <a href="http://irsec-resumes.ritsec.club/" target="_blank" rel="noreferrer">
+          Resume Submission
+        </a>
       </div>
       <div>
         <h2>Videos</h2>
