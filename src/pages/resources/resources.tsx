@@ -14,6 +14,9 @@ const Resources: React.FC = (): React.ReactElement => {
         <a href="http://calendar.ritsec.club" target="_blank" rel="noreferrer">
           RITSEC Calendar
         </a>
+        <a href={`${process.env.PUBLIC_URL}/res/IRSeC_2021_Packet_v6.pdf`} target="_blank" rel="noreferrer">
+          IRSeC 2021 Blue Team Packet
+        </a>
       </div>
       <div>
         <h2>Videos</h2>
@@ -42,9 +45,29 @@ const Resources: React.FC = (): React.ReactElement => {
           <a href="https://www.youtube.com/watch?v=JEU1-RPKMa8" target="_blank" rel="noreferrer">
             Workshop #1
           </a>
-          (
+          &nbsp;(
           <a href={`${process.env.PUBLIC_URL}/res/intro_to_comps.pdf`} target="_blank" rel="noreferrer">
             Slides
+          </a>
+          )
+        </span>
+        <span>
+          <p>Workshop #2</p>
+          &nbsp;(
+          <a href={`${process.env.PUBLIC_URL}/res/injects.pdf`} target="_blank" rel="noreferrer">
+            Slides
+          </a>
+          )
+        </span>
+        <span>
+          <p>Workshop #3</p>
+          &nbsp;(
+          <a href={`${process.env.PUBLIC_URL}/res/blue_team_packets.pdf`} target="_blank" rel="noreferrer">
+            Slides
+          </a>
+          ,&nbsp;
+          <a href={`${process.env.PUBLIC_URL}/res/core_services.pdf`} target="_blank" rel="noreferrer">
+            Core Services
           </a>
           )
         </span>

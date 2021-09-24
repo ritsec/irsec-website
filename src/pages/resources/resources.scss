@@ -18,11 +18,16 @@
       font-size: 1.5rem;
     }
 
-    a {
+    a,
+    p {
       color: inherit;
+      width: auto;
+      display: inline;
     }
 
-    a:not(:last-of-type) {
+    a:not(:last-child),
+    p:not(:last-child),
+    span:not(:last-child) {
       margin-bottom: 2rem;
     }
 
