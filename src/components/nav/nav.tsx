@@ -13,7 +13,7 @@ const Nav: React.FC<NavProps> = ({ openSidebar, isSidebarOpen }): React.ReactEle
   return (
     <nav className="nav">
       <NavLink className="logo-link" to="/">
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" alt="iresec logo" />
       </NavLink>
       <div className="links">
         <NavLink className="nav-link" to="/">

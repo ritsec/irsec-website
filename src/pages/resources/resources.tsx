@@ -6,102 +6,72 @@ import HeroBg from "../../res/circuit-board.svg";
 const Resources: React.FC = (): React.ReactElement => {
   return (
     <div
-      className="home register-container"
+      className="home resources-container"
       style={{ backgroundImage: `linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(0, 0, 0, 0)), url(${HeroBg})` }}
     >
-      <div>
+      <div className="column">
         <h2>General</h2>
-        <a href="http://calendar.ritsec.club" target="_blank" rel="noreferrer">
-          RITSEC Calendar
-        </a>
-        <a href={`${process.env.PUBLIC_URL}/res/IRSeC_2021_Packet_v6.pdf`} target="_blank" rel="noreferrer">
+        <div className="row">
+          <a href="http://calendar.ritsec.club" target="_blank" rel="noreferrer">
+            RITSEC Calendar
+          </a>
+        </div>
+        {/* <a href={`${process.env.PUBLIC_URL}/res/IRSeC_2021_Packet_v6.pdf`} target="_blank" rel="noreferrer">
           IRSeC 2021 Blue Team Packet
         </a>
         <a href="http://irsec-resumes.ritsec.club/" target="_blank" rel="noreferrer">
           Resume Submission
-        </a>
+        </a> */}
       </div>
-      <div>
-        <h2>Videos</h2>
-        <a href="https://www.youtube.com/watch?v=4SjgMEtb27w" target="_blank" rel="noreferrer">
-          Blue Linux
-        </a>
-        <a href="https://www.youtube.com/watch?v=hum4hzNE_j8" target="_blank" rel="noreferrer">
-          Blue Windows
-        </a>
-        <a href="https://www.youtube.com/watch?v=w8Xs58cHcr8" target="_blank" rel="noreferrer">
-          Blue Networking
-        </a>
-        <a href="https://www.youtube.com/watch?v=VvoDrT452Jc" target="_blank" rel="noreferrer">
-          Intro to Incident Response
-        </a>
-        <a href="https://www.youtube.com/watch?v=HYbwn-WGWP8" target="_blank" rel="noreferrer">
-          Intro to Services
-        </a>
-        <a href="https://www.youtube.com/watch?v=Fq__gkq9sxs" target="_blank" rel="noreferrer">
-          How to Blue Team
-        </a>
-      </div>
-      <div>
+      <div className="column">
         <h2>Blue Team Workshops</h2>
-        <span>
-          <a href="https://www.youtube.com/watch?v=JEU1-RPKMa8" target="_blank" rel="noreferrer">
-            Workshop #1
-          </a>
-          &nbsp;(
-          <a href={`${process.env.PUBLIC_URL}/res/intro_to_comps.pdf`} target="_blank" rel="noreferrer">
-            Slides
-          </a>
-          )
-        </span>
-        <span>
-          <p>Workshop #2</p>
-          &nbsp;(
-          <a href={`${process.env.PUBLIC_URL}/res/injects.pdf`} target="_blank" rel="noreferrer">
-            Slides
-          </a>
-          )
-        </span>
-        <span>
-          <p>Workshop #3</p>
-          &nbsp;(
-          <a href={`${process.env.PUBLIC_URL}/res/blue_team_packets.pdf`} target="_blank" rel="noreferrer">
-            Slides
-          </a>
-          ,&nbsp;
-          <a href={`${process.env.PUBLIC_URL}/res/core_services.pdf`} target="_blank" rel="noreferrer">
-            Core Services
-          </a>
-          )
-        </span>
+        <div className="row">
+          <p>10/1 @ 12pm - Intro to Competitions</p>
+          <div className="workshop-links">
+            <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
+              <i className="fas fa-video" aria-label="recording" />
+            </a>
+            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+              <i className="fas fa-chalkboard" aria-label="slides" />
+            </a>
+          </div>
+        </div>
+        <div className="row">
+          <p>10/15 @ 12pm - Injects</p>
+          <div className="workshop-links">
+            <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
+              <i className="fas fa-video" aria-label="recording" />
+            </a>
+            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+              <i className="fas fa-chalkboard" aria-label="slides" />
+            </a>
+          </div>
+        </div>
+        <div className="row">
+          <p>10/22 @ 12pm - Core Services</p>
+          <div className="workshop-links">
+            <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
+              <i className="fas fa-video" aria-label="recording" />
+            </a>
+            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+              <i className="fas fa-chalkboard" aria-label="slides" />
+            </a>
+          </div>
+        </div>
+        <div className="row">
+          <p>10/29 @ 12pm - Incident Response</p>
+          <div className="workshop-links">
+            <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
+              <i className="fas fa-video" aria-label="recording" />
+            </a>
+            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+              <i className="fas fa-chalkboard" aria-label="slides" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
-  // return (
-  //   <div className="resources-container">
-  //     <div
-  //       className="hero mini-hero"
-  //       style={{ backgroundImage: `linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(0, 0, 0, 0)), url(${HeroBg})` }}
-  //     >
-  //       <h1>Resources</h1>
-  //     </div>
-  //     <div className="content">
-  //       <div className="card card-fluid-50">
-  //         <h1 className="card-header">Blue Team Links</h1>
-  //         <div className="list">
-  //           <div className="list-item">
-  //             <span className="list-icon">
-  //               <i className="fas fa-lock"></i>
-  //             </span>
-  //             <a href="http://calendar.ritsec.club" target="_blank" rel="noreferrer">
-  //               RITSEC Calendar
-  //             </a>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default Resources;
