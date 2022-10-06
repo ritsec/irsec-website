@@ -13,16 +13,15 @@ const Register: React.FC = (): React.ReactElement => {
         <h2>Signups</h2>
         <div className="row">
           <p>Compete in IRSeC (Blue Team)</p>
-          <a className="register-link" href="#" target="_blank" rel="noreferrer">
-            {/* <i className="fas fa-external-link-alt" aria-label="register" /> */}
-            Coming Soon
-          </a>
+          <p className="register-link">
+            <i className="fas fa-user-slash" aria-label="closed" />
+            Closed
+          </p>
         </div>
         <div className="row">
           <p>Volunteer at IRSeC (White Team)</p>
-          <a className="register-link" href="#" target="_blank" rel="noreferrer">
-            {/* <i className="fas fa-external-link-alt" aria-label="register" /> */}
-            Coming Soon
+          <a className="register-link" href="https://forms.gle/p6cZdnd2uZYGKuLU6" target="_blank" rel="noreferrer">
+            <i className="fas fa-external-link-alt" aria-label="register" />
           </a>
         </div>
       </div>
