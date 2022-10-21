@@ -28,10 +28,20 @@ const Resources: React.FC = (): React.ReactElement => {
         <div className="row">
           <p>10/1 @ 12pm - Intro to Competitions</p>
           <div className="workshop-links">
-            <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
+            <a
+              className="workshop-link"
+              href="https://drive.google.com/file/d/1UkTQCS2ssWLK_MFTGFqttgeMQK87PRu8/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fas fa-video" aria-label="recording" />
             </a>
-            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+            <a
+              className="workshop-link"
+              href="https://docs.google.com/presentation/d/1hFFQ6e9MevlM_FtvZJ4ljDNugLpYglg6ZXRHI3Zz4t0/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fas fa-chalkboard" aria-label="slides" />
             </a>
           </div>
@@ -39,10 +49,20 @@ const Resources: React.FC = (): React.ReactElement => {
         <div className="row">
           <p>10/15 @ 12pm - Injects</p>
           <div className="workshop-links">
-            <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
+            <a
+              className="workshop-link"
+              href="https://drive.google.com/file/d/1UkTQCS2ssWLK_MFTGFqttgeMQK87PRu8/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fas fa-video" aria-label="recording" />
             </a>
-            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+            <a
+              className="workshop-link"
+              href="https://docs.google.com/presentation/d/1hFFQ6e9MevlM_FtvZJ4ljDNugLpYglg6ZXRHI3Zz4t0/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fas fa-chalkboard" aria-label="slides" />
             </a>
           </div>
