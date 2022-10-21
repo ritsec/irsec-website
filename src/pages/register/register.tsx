@@ -20,9 +20,10 @@ const Register: React.FC = (): React.ReactElement => {
         </div>
         <div className="row">
           <p>Volunteer at IRSeC (White Team)</p>
-          <a className="register-link" href="https://forms.gle/p6cZdnd2uZYGKuLU6" target="_blank" rel="noreferrer">
-            <i className="fas fa-external-link-alt" aria-label="register" />
-          </a>
+          <p className="register-link">
+            <i className="fas fa-user-slash" aria-label="closed" />
+            Closed
+          </p>
         </div>
       </div>
     </div>
