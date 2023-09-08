@@ -12,6 +12,9 @@ const Register: React.FC = (): React.ReactElement => {
       <div className="column">
         <h2>Signups</h2>
         <div className="row">
+          <p>Coming Soon</p>
+        </div>
+        {/* <div className="row">
           <p>Compete in IRSeC (Blue Team)</p>
           <p className="register-link">
             <i className="fas fa-user-slash" aria-label="closed" />
@@ -24,7 +27,7 @@ const Register: React.FC = (): React.ReactElement => {
             <i className="fas fa-user-slash" aria-label="closed" />
             Closed
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

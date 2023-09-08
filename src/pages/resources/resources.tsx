@@ -26,6 +26,9 @@ const Resources: React.FC = (): React.ReactElement => {
       <div className="column">
         <h2>Blue Team Workshops</h2>
         <div className="row">
+          <p>Coming soon</p>
+        </div>
+        {/* <div className="row">
           <p>10/1 @ 12pm - Intro to Competitions</p>
           <div className="workshop-links">
             <a
@@ -73,7 +76,7 @@ const Resources: React.FC = (): React.ReactElement => {
             <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
               <i className="fas fa-video" aria-label="recording" />
             </a>
-            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+            <a className="workshop-link" href={`/res/slides.pdf`} target="_blank" rel="noreferrer">
               <i className="fas fa-chalkboard" aria-label="slides" />
             </a>
           </div>
@@ -84,11 +87,11 @@ const Resources: React.FC = (): React.ReactElement => {
             <a className="workshop-link" href="#" target="_blank" rel="noreferrer">
               <i className="fas fa-video" aria-label="recording" />
             </a>
-            <a className="workshop-link" href={`${process.env.PUBLIC_URL}/res/slides.pdf`} target="_blank" rel="noreferrer">
+            <a className="workshop-link" href={`/res/slides.pdf`} target="_blank" rel="noreferrer">
               <i className="fas fa-chalkboard" aria-label="slides" />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
