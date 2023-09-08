@@ -1,17 +1,18 @@
 # IRSeC Website
 
-This is the main website for IRSeC which is RITSEC's beginner-oriented, Red v. Blue, incident response focused competition.
+This is the main website for IRSeC which is RITSEC's beginner-oriented, Red v. Blue, incident response focused competition. Built with [ViteJS](https://vitejs.dev/).
 
 ## Prerequisites
 
 - NVM - Node Version Manager (https://github.com/nvm-sh/nvm)
+  - _Or manual installation of NodeJS (just check the `.nvmrc` file for preferred version)_
 
 ## Setting up
 
 To use the specified version of NodeJS, just run:
 
 ```shell
-$ nvm use
+$ nvm install
 $ npm i
 ```
 
@@ -19,20 +20,13 @@ This will use the local version of NodeJS as specified in the [.nvmrc](./.nvmrc)
 
 ## Production
 
-In order to push to production (Github Pages) simply just run the following command:
-
-```shell
-$ npm run deploy
-```
+Production is deployed automatically to Cloudflare Pages via CI/CD. Nothing to do here :)
 
 ## Development
 
 If you want to stand up a development server, just run:
 
 ```shell
-$ npm start
+$ npm i
+$ npm run dev
 ```
-
-Code can be committed to the branches as normal except for the `gh-pages` branch
-
-**NOTE: The `gh-pages` branch should never be directly pushed to**
